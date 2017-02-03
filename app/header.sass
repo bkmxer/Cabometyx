@@ -5,11 +5,13 @@
 //First screen styles
 
 .body
-  background-color: #fff
+  background-color: #f5f5f5
   min-height: 100vh
+  padding-left: 120px
+  padding-right: 128px
   &__container
-    margin-left: 120px
-    margin-right: 128px
+
+    background-color: #f5f5f5
   &__header
     text-align: center
     &--therapy
@@ -75,6 +77,7 @@
       background-image: url('img/bitmap-copy-4.jpg')
       background-repeat: no-repeat
       background-position: 0 0
+      padding-bottom: 107px
     &--moto
       font-family: $OpenSans
       font-size: 36px
@@ -88,7 +91,7 @@
       margin-top: 42px
       margin-left: 86px
       margin-right: 91px
-      margin-bottom: 10px
+      margin-bottom: 15px
 
 .header__sup
   font-size: 18px
@@ -103,6 +106,63 @@
   letter-spacing: normal
   text-align: center
   color: #787878
+.body__paragraph--nccn
+  margin: auto 101px
+  font-family: $Lato
+  font-size: 18px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.44
+  letter-spacing: normal
+  text-align: center
+  color: #ffffff
 
+.sup
+  font-size: 50%
 
+.body
+  &__header
+    &--nccn
+      margin-right: 111px
+      margin-left: 114px
+      font-family: $Lato
+      font-size: 24px
+      font-weight: 700
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.25
+      letter-spacing: 0.2px
+      text-align: center
+      color: #fff
+  &__section
+    &--nccn
+      padding-top: 73px
+      padding-bottom: 91px
+      position: relative
+      z-index: 2
+      background-color: #fff
+.section__gradient
+  position: absolute
+  z-index: -1
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-image: url('img/bgi__nccn/bitmap@3x.png')
+  background-position: 0 0
+  -webkit-background-size: 100% 100%
+  background-size: 100% 100%
 
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    z-index: -2
+    top: 120px
+    left: 30px
+    right: 30px
+    bottom: 0
+    -webkit-filter: blur(35px)
+    filter: blur(35px)
+    background-image: linear-gradient(88deg, #d21d39, #730b4a), linear-gradient(#000000, #000000)
